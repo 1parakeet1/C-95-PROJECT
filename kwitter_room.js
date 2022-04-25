@@ -22,6 +22,7 @@ function addRoom(){
     purpose: "roomName"
   });
   window.location="kwitter_page.html";
+  localStorage.setItem("room_name", room_name);
 }
 
 function getData() {firebase.database().ref("/").on('value',
